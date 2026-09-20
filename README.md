@@ -58,3 +58,8 @@ A real-time live polling web application where users can create polls, share the
                               │     SSE      │
                               │   Clients    │
                               └──────────────┘
+## Screenshots
+
+### Live Polling Application
+
+![Live Polling App](poll-results.png)
