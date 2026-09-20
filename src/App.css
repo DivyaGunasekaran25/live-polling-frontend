@@ -1,0 +1,501 @@
+/* ================================
+   LIVE POLLING APP - MAIN STYLES
+   ================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f7fb;
+  color: #1f2937;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+/* ================================
+   MAIN APP
+   ================================ */
+
+#root {
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* ================================
+   HEADER
+   ================================ */
+
+.header {
+  width: 100%;
+  background: #2563eb;
+  color: white;
+  padding: 18px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.header p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* ================================
+   MAIN CONTAINER
+   ================================ */
+
+.container {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* ================================
+   CARD
+   ================================ */
+
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 25px;
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 26px;
+  color: #111827;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #111827;
+}
+
+/* ================================
+   AUTH PAGE
+   ================================ */
+
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 430px;
+  background: white;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.auth-card h1 {
+  text-align: center;
+  margin: 0 0 8px;
+  color: #1d4ed8;
+}
+
+.auth-card p {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 25px;
+}
+
+/* ================================
+   FORM
+   ================================ */
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 7px;
+  color: #374151;
+}
+
+input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  background: white;
+}
+
+input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* ================================
+   BUTTONS
+   ================================ */
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 11px 18px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.primary-button {
+  width: 100%;
+  background: #2563eb;
+  color: white;
+}
+
+.primary-button:hover {
+  background: #1d4ed8;
+}
+
+.secondary-button {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.secondary-button:hover {
+  background: #d1d5db;
+}
+
+.danger-button {
+  background: #ef4444;
+  color: white;
+}
+
+.danger-button:hover {
+  background: #dc2626;
+}
+
+/* ================================
+   POLL OPTIONS
+   ================================ */
+
+.option-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.option-row input {
+  flex: 1;
+}
+
+.remove-option {
+  background: #fee2e2;
+  color: #dc2626;
+  padding: 10px 14px;
+}
+
+.remove-option:hover {
+  background: #fecaca;
+}
+
+.add-option {
+  background: #eef2ff;
+  color: #4f46e5;
+  margin-bottom: 18px;
+}
+
+.add-option:hover {
+  background: #e0e7ff;
+}
+
+/* ================================
+   POLL INFORMATION
+   ================================ */
+
+.poll-question {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 25px;
+}
+
+.poll-option {
+  width: 100%;
+  margin-bottom: 14px;
+  padding: 14px 18px;
+  background: #2563eb;
+  color: white;
+  text-align: left;
+  border-radius: 9px;
+}
+
+.poll-option:hover {
+  background: #1d4ed8;
+}
+
+/* ================================
+   LIVE RESULTS
+   ================================ */
+
+.live-results {
+  margin-top: 25px;
+}
+
+.live-results h2 {
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.total-votes {
+  display: inline-block;
+  background: #eff6ff;
+  color: #1d4ed8;
+  padding: 8px 13px;
+  border-radius: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.result-item {
+  margin-bottom: 22px;
+}
+
+.result-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+
+.result-name {
+  color: #374151;
+}
+
+.result-count {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Progress bar */
+
+.progress-container {
+  width: 100%;
+  height: 12px;
+  background: #e5e7eb;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #2563eb;
+  border-radius: 20px;
+  transition: width 0.4s ease;
+}
+
+/* ================================
+   LIVE INDICATOR
+   ================================ */
+
+.live-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #16a34a;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.live-dot {
+  width: 9px;
+  height: 9px;
+  background: #22c55e;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* ================================
+   SHARE SECTION
+   ================================ */
+
+.share-section {
+  margin-top: 25px;
+  padding: 18px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.share-section p {
+  margin-top: 0;
+  font-weight: 600;
+}
+
+.share-link {
+  display: flex;
+  gap: 10px;
+}
+
+.share-link input {
+  flex: 1;
+  background: white;
+}
+
+.copy-button {
+  background: #7c3aed;
+  color: white;
+  white-space: nowrap;
+}
+
+.copy-button:hover {
+  background: #6d28d9;
+}
+
+/* ================================
+   SUCCESS / ERROR MESSAGE
+   ================================ */
+
+.success-message {
+  padding: 12px 15px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  background: #dcfce7;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
+.error-message {
+  padding: 12px 15px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+/* ================================
+   AUTH SWITCH
+   ================================ */
+
+.auth-switch {
+  text-align: center;
+  margin-top: 20px;
+  color: #6b7280;
+}
+
+.auth-switch button {
+  background: none;
+  color: #2563eb;
+  padding: 0;
+  margin-left: 5px;
+}
+
+.auth-switch button:hover {
+  text-decoration: underline;
+}
+
+/* ================================
+   LOGOUT
+   ================================ */
+
+.logout-button {
+  background: white;
+  color: #2563eb;
+  padding: 8px 15px;
+}
+
+.logout-button:hover {
+  background: #eff6ff;
+}
+
+/* ================================
+   POLL ACTIONS
+   ================================ */
+
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+   ================================ */
+
+@media (max-width: 600px) {
+  .header {
+    padding: 15px 18px;
+  }
+
+  .header h1 {
+    font-size: 20px;
+  }
+
+  .container {
+    padding: 25px 15px;
+  }
+
+  .card {
+    padding: 22px 18px;
+  }
+
+  .auth-card {
+    padding: 25px 20px;
+  }
+
+  .poll-question {
+    font-size: 20px;
+  }
+
+  .share-link {
+    flex-direction: column;
+  }
+
+  .share-link button {
+    width: 100%;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .actions button {
+    width: 100%;
+  }
+}
