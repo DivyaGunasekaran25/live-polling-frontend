@@ -63,3 +63,9 @@ A real-time live polling web application where users can create polls, share the
 ### Live Polling Application
 
 ![Live Polling App](poll-results.png)
+## Related Repository
+
+### Backend
+The backend API is available here:
+
+[Live Polling Backend](https://github.com/DivyaGunasekaran25/live-polling-backend)
